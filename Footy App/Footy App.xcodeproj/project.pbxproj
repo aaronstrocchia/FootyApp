@@ -7,24 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE6B14012C3B313500F1F609 /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6B14002C3B313500F1F609 /* ScoresView.swift */; };
 		BE77F0B92C32EF33002AD510 /* Footy_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77F0B82C32EF33002AD510 /* Footy_AppApp.swift */; };
 		BE77F0BB2C32EF33002AD510 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77F0BA2C32EF33002AD510 /* ContentView.swift */; };
 		BE77F0BD2C32EF34002AD510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE77F0BC2C32EF34002AD510 /* Assets.xcassets */; };
 		BE77F0C02C32EF34002AD510 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE77F0BF2C32EF34002AD510 /* Preview Assets.xcassets */; };
 		BE77F0C72C32F058002AD510 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77F0C62C32F058002AD510 /* StatsView.swift */; };
-		BE77F0C92C32F06F002AD510 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77F0C82C32F06F002AD510 /* LoginView.swift */; };
+		BE77F0C92C32F06F002AD510 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77F0C82C32F06F002AD510 /* ProfileView.swift */; };
 		BE77F0CB2C32F088002AD510 /* UpcomingGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77F0CA2C32F088002AD510 /* UpcomingGamesView.swift */; };
 		BE77F0CD2C32F097002AD510 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77F0CC2C32F096002AD510 /* TeamsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE34344E2C358192001675CD /* Footy-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Footy-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BE6B14002C3B313500F1F609 /* ScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
 		BE77F0B52C32EF33002AD510 /* Footy App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Footy App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77F0B82C32EF33002AD510 /* Footy_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footy_AppApp.swift; sourceTree = "<group>"; };
 		BE77F0BA2C32EF33002AD510 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE77F0BC2C32EF34002AD510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE77F0BF2C32EF34002AD510 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE77F0C62C32F058002AD510 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
-		BE77F0C82C32F06F002AD510 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BE77F0C82C32F06F002AD510 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BE77F0CA2C32F088002AD510 /* UpcomingGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingGamesView.swift; sourceTree = "<group>"; };
 		BE77F0CC2C32F096002AD510 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,10 +62,12 @@
 		BE77F0B72C32EF33002AD510 /* Footy App */ = {
 			isa = PBXGroup;
 			children = (
+				BE34344E2C358192001675CD /* Footy-App-Info.plist */,
 				BE77F0B82C32EF33002AD510 /* Footy_AppApp.swift */,
 				BE77F0BA2C32EF33002AD510 /* ContentView.swift */,
+				BE6B14002C3B313500F1F609 /* ScoresView.swift */,
 				BE77F0C62C32F058002AD510 /* StatsView.swift */,
-				BE77F0C82C32F06F002AD510 /* LoginView.swift */,
+				BE77F0C82C32F06F002AD510 /* ProfileView.swift */,
 				BE77F0CA2C32F088002AD510 /* UpcomingGamesView.swift */,
 				BE77F0CC2C32F096002AD510 /* TeamsView.swift */,
 				BE77F0BC2C32EF34002AD510 /* Assets.xcassets */,
@@ -149,11 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6B14012C3B313500F1F609 /* ScoresView.swift in Sources */,
 				BE77F0CB2C32F088002AD510 /* UpcomingGamesView.swift in Sources */,
 				BE77F0BB2C32EF33002AD510 /* ContentView.swift in Sources */,
 				BE77F0B92C32EF33002AD510 /* Footy_AppApp.swift in Sources */,
 				BE77F0CD2C32F097002AD510 /* TeamsView.swift in Sources */,
-				BE77F0C92C32F06F002AD510 /* LoginView.swift in Sources */,
+				BE77F0C92C32F06F002AD510 /* ProfileView.swift in Sources */,
 				BE77F0C72C32F058002AD510 /* StatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +297,7 @@
 				DEVELOPMENT_TEAM = FDV24QHHQ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Footy-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,6 +327,7 @@
 				DEVELOPMENT_TEAM = FDV24QHHQ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Footy-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
