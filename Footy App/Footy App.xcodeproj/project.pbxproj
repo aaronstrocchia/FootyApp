@@ -81,13 +81,13 @@
 			isa = PBXGroup;
 			children = (
 				BE34344E2C358192001675CD /* Footy-App-Info.plist */,
-				BE505A7E2C417A06007D57FC /* ProfileView.swift */,
 				821DB48F2C40D292003FAF27 /* Extensions */,
 				BE77F0B82C32EF33002AD510 /* Footy_AppApp.swift */,
 				BE18AFDB2C41782500A1E59A /* LoginView.swift */,
 				BE77F0BA2C32EF33002AD510 /* ContentView.swift */,
 				BE6B14002C3B313500F1F609 /* ScoresView.swift */,
 				BE77F0C62C32F058002AD510 /* StatsView.swift */,
+				BE505A7E2C417A06007D57FC /* ProfileView.swift */,
 				821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */,
 				821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */,
 				BE77F0CA2C32F088002AD510 /* UpcomingGamesView.swift */,
