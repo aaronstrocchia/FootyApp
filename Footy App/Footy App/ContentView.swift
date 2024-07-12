@@ -17,11 +17,120 @@ struct HomeView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                     .overlay(Color.black).opacity(0.5)
+                
+                VStack {
+                    HStack {
+                        Image(systemName: "crown")
+                            .foregroundStyle(Color.yellow)
+                         Text("Team 1 Team Captain")
+                            .bold()
+                    }//end HStack
+                    .frame(width: 360, height: 60)
+                    .background(Color.black)
+                    .cornerRadius(5)
+                    
+                    Spacer()
+                    
+                    HStack {
+                        Spacer()
+                        Text("Upcoming Games")
+                            .font(.title2)
+                            .bold()
+                        Spacer()
+                        Text("View More >")
+                            .foregroundStyle(Color.blue)
+                        Spacer()
+                    }//end HStack
+                    .padding([.leading, .trailing], 200)
+                    
+                    HStack {
+                        Spacer()
+                        VStack{
+                            Spacer()
+                            Text("Team 1")
+                                .font(.caption)
+                                .bold()
+                            Image(systemName: "soccerball")
+                                .foregroundStyle(Color.red)
+                            Spacer()
+                        }//end VStack
+                        Spacer()
+                        Text("Friday, July 12th - 12:00 pm")
+                            .font(.caption)
+                            .bold()
+                        Spacer()
+                        VStack {
+                            Spacer()
+                            Text("Team 2")
+                                .font(.caption)
+                                .bold()
+                            Image(systemName: "soccerball")
+                                .foregroundStyle(Color.blue)
+                            Spacer()
+                        }//end VStack
+                        Spacer()
+                    }//end HStack
+                    .frame(width: 360, height: 70)
+                    .background(Color.black)
+                    .cornerRadius(5)
+                    
+                    Spacer()
+                    
+                    HStack {
+                        Spacer()
+                        Text("Your Stats")
+                            .font(.title2)
+                            .bold()
+                        Spacer()
+                        Text("View All >")
+                            .foregroundStyle(Color.blue)
+                        Spacer()
+                    }//end HStack
+                    .padding([.leading, .trailing], 110)
+                    
+                    HStack {
+                        Spacer()
+                        VStack(alignment: .center) {
+                            Text("8")
+                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                .bold()
+                                .frame(width: 100, height: 100)
+                                .background(Color.white)
+                                .foregroundStyle(Color.black)
+                                .cornerRadius(100)
+                            Text("Goals")
+                        }
+                        Spacer()
+                        VStack(alignment: .center) {
+                            Text("5")
+                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                .bold()
+                                .frame(width: 100, height: 100)
+                                .background(Color.white)
+                                .foregroundStyle(Color.black)
+                                .cornerRadius(100)
+                            Text("Assists")
+                        }
+                        Spacer()
+                        VStack(alignment: .center) {
+                            Text("2")
+                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                .bold()
+                                .frame(width: 100, height: 100)
+                                .background(Color.white)
+                                .foregroundStyle(Color.black)
+                                .cornerRadius(100)
+                            Text("Saves")
+                        }
+                        Spacer()
+                    }
+                    .padding([.leading, .trailing], 250)
+                    
+                    Spacer()
+                }//end Vstack
+                .padding(.top, 20)
                 .navigationTitle("Welcome User")
                 
-                Text("Home View")
-                    .font(.title)
-                    .bold()
             }
             
             
@@ -30,6 +139,11 @@ struct HomeView: View {
 }
 
 struct ContentView: View {
+   /* init() {
+        UITabBar.appearance().backgroundColor = UIColor.black
+        // Set your desired color here
+        }//Maybe keep Maybe toss
+    */
     var body: some View {
             TabView {
                 HomeView()
