@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821DB48A2C3EFF19003FAF27 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB4892C3EFF19003FAF27 /* CarouselView.swift */; };
+		821DB48C2C40CC83003FAF27 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */; };
+		821DB48E2C40CCB1003FAF27 /* JoinNowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */; };
+		821DB4912C40D2A8003FAF27 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB4902C40D2A8003FAF27 /* Email.swift */; };
+		BE18AFDC2C41782500A1E59A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18AFDB2C41782500A1E59A /* LoginView.swift */; };
 		BE6B14012C3B313500F1F609 /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6B14002C3B313500F1F609 /* ScoresView.swift */; };
 		BE77F0B92C32EF33002AD510 /* Footy_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77F0B82C32EF33002AD510 /* Footy_AppApp.swift */; };
 		BE77F0BB2C32EF33002AD510 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77F0BA2C32EF33002AD510 /* ContentView.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		821DB4892C3EFF19003FAF27 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
+		821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowButtonView.swift; sourceTree = "<group>"; };
+		821DB4902C40D2A8003FAF27 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		BE18AFDB2C41782500A1E59A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BE34344E2C358192001675CD /* Footy-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Footy-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BE6B14002C3B313500F1F609 /* ScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
 		BE77F0B52C32EF33002AD510 /* Footy App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Footy App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		821DB48F2C40D292003FAF27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				821DB4902C40D2A8003FAF27 /* Email.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BE77F0AC2C32EF33002AD510 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +81,15 @@
 			isa = PBXGroup;
 			children = (
 				BE34344E2C358192001675CD /* Footy-App-Info.plist */,
+				821DB48F2C40D292003FAF27 /* Extensions */,
 				BE77F0B82C32EF33002AD510 /* Footy_AppApp.swift */,
+				BE18AFDB2C41782500A1E59A /* LoginView.swift */,
 				BE77F0BA2C32EF33002AD510 /* ContentView.swift */,
 				BE6B14002C3B313500F1F609 /* ScoresView.swift */,
 				BE77F0C62C32F058002AD510 /* StatsView.swift */,
 				BE77F0C82C32F06F002AD510 /* ProfileView.swift */,
+				821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */,
+				821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */,
 				BE77F0CA2C32F088002AD510 /* UpcomingGamesView.swift */,
 				BE77F0CC2C32F096002AD510 /* TeamsView.swift */,
 				BE77F0BC2C32EF34002AD510 /* Assets.xcassets */,
@@ -80,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				BE77F0BF2C32EF34002AD510 /* Preview Assets.xcassets */,
+				821DB4892C3EFF19003FAF27 /* CarouselView.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -155,10 +178,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6B14012C3B313500F1F609 /* ScoresView.swift in Sources */,
+				821DB48C2C40CC83003FAF27 /* LoginButtonView.swift in Sources */,
 				BE77F0CB2C32F088002AD510 /* UpcomingGamesView.swift in Sources */,
 				BE77F0BB2C32EF33002AD510 /* ContentView.swift in Sources */,
 				BE77F0B92C32EF33002AD510 /* Footy_AppApp.swift in Sources */,
+				821DB4912C40D2A8003FAF27 /* Email.swift in Sources */,
+				821DB48E2C40CCB1003FAF27 /* JoinNowButtonView.swift in Sources */,
 				BE77F0CD2C32F097002AD510 /* TeamsView.swift in Sources */,
+				BE77F0C92C32F06F002AD510 /* ProfileView.swift in Sources */,
+				821DB48A2C3EFF19003FAF27 /* CarouselView.swift in Sources */,
+				BE18AFDC2C41782500A1E59A /* LoginView.swift in Sources */,
 				BE77F0C92C32F06F002AD510 /* ProfileView.swift in Sources */,
 				BE77F0C72C32F058002AD510 /* StatsView.swift in Sources */,
 			);
