@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct HomeView: View {
+    @State private var isGamesViewPresent: Bool = false
     var body: some View {
         NavigationStack {
             ZStack {
@@ -19,15 +20,18 @@ struct HomeView: View {
                     .overlay(Color.black).opacity(0.5)
                 
                 VStack {
-                    HStack {
-                        Image(systemName: "crown")
-                            .foregroundStyle(Color.yellow)
-                         Text("Team 1 Team Captain")
-                            .bold()
-                    }//end HStack
-                    .frame(width: 360, height: 60)
-                    .background(Color.black)
+                    NavigationLink(destination: TeamsView()) {
+                        HStack {
+                            Image(systemName: "crown")
+                                .foregroundStyle(Color.yellow)
+                             Text("Team 1 Team Captain")
+                                .bold()
+                                .foregroundStyle(Color.white)
+                        }//end HStack
+                        .frame(width: 360, height: 60)
+                        .background(Color.black)
                     .cornerRadius(5)
+                    }
                     
                     Spacer()
                     
@@ -37,8 +41,14 @@ struct HomeView: View {
                             .font(.title2)
                             .bold()
                         Spacer()
-                        Text("View More >")
-                            .foregroundStyle(Color.blue)
+                        Button(action: {
+                            isGamesViewPresent.toggle()
+                        }, label: {
+                            Text("View All >")
+                        })
+                            .sheet(isPresented: $isGamesViewPresent, content: {
+                                NextGameView()
+                            })
                         Spacer()
                     }//end HStack
                     .padding([.leading, .trailing], 200)
@@ -82,8 +92,10 @@ struct HomeView: View {
                             .font(.title2)
                             .bold()
                         Spacer()
-                        Text("View All >")
-                            .foregroundStyle(Color.blue)
+                        NavigationLink(destination: StatsView()) {
+                            Text("View All >")
+                                .foregroundStyle(Color.blue)
+                        }
                         Spacer()
                     }//end HStack
                     .padding([.leading, .trailing], 110)

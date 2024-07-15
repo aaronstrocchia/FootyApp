@@ -9,7 +9,19 @@ import SwiftUI
 
 struct TeamsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack{
+                Image("Background")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .overlay(Color.black).opacity(0.5)
+                Text("Teams View")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .bold()
+                    .navigationTitle("Teams View")
+            }
+        }
     }
 }
 
