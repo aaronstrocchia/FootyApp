@@ -24,14 +24,14 @@ struct HomeView: View {
                         HStack {
                             Image(systemName: "crown")
                                 .foregroundStyle(Color.yellow)
-                             Text("Team 1 Team Captain")
+                            Text("Team 1 Team Captain")
                                 .bold()
                                 .foregroundStyle(Color.white)
                         }//end HStack
                         .frame(width: 360, height: 60)
                         .background(Color.black)
-                    .cornerRadius(5)
-                    }
+                        .cornerRadius(5)
+                    }//end NavLink
                     
                     Spacer()
                     
@@ -45,10 +45,10 @@ struct HomeView: View {
                             isGamesViewPresent.toggle()
                         }, label: {
                             Text("View All >")
+                        })//end Button
+                        .sheet(isPresented: $isGamesViewPresent, content: {
+                            NextGameView()
                         })
-                            .sheet(isPresented: $isGamesViewPresent, content: {
-                                NextGameView()
-                            })
                         Spacer()
                     }//end HStack
                     .padding([.leading, .trailing], 200)
@@ -95,7 +95,7 @@ struct HomeView: View {
                         NavigationLink(destination: StatsView()) {
                             Text("View All >")
                                 .foregroundStyle(Color.blue)
-                        }
+                        }//end NavLink
                         Spacer()
                     }//end HStack
                     .padding([.leading, .trailing], 110)
@@ -104,18 +104,18 @@ struct HomeView: View {
                         Spacer()
                         VStack(alignment: .center) {
                             Text("8")
-                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                .font(.title)
                                 .bold()
                                 .frame(width: 100, height: 100)
                                 .background(Color.white)
                                 .foregroundStyle(Color.black)
                                 .cornerRadius(100)
                             Text("Goals")
-                        }
+                        }//end HStack
                         Spacer()
                         VStack(alignment: .center) {
                             Text("5")
-                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                .font(.title)
                                 .bold()
                                 .frame(width: 100, height: 100)
                                 .background(Color.white)
@@ -126,7 +126,7 @@ struct HomeView: View {
                         Spacer()
                         VStack(alignment: .center) {
                             Text("2")
-                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                .font(.title)
                                 .bold()
                                 .frame(width: 100, height: 100)
                                 .background(Color.white)
@@ -143,12 +143,10 @@ struct HomeView: View {
                 .padding(.top, 20)
                 .navigationTitle("Welcome User")
                 
-            }
-            
-            
-        }
-    }
-}
+            }//end ZStack
+        }//end NavStack
+    }//end body
+}//end HomeView
 
 struct ContentView: View {
    /* init() {

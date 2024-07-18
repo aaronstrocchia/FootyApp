@@ -19,6 +19,7 @@ struct NextGameView: View {
                 
                 VStack {
                     Spacer()
+                    
                     HStack {
                         Spacer()
                         VStack {
@@ -29,6 +30,7 @@ struct NextGameView: View {
                                 .resizable()
                                 .frame(width: 100, height: 100)
                                 .foregroundStyle(Color.red)
+                                .shadow(color: .red, radius: 5)
                         }//end VStack
                         Spacer()
                         VStack {
@@ -39,6 +41,7 @@ struct NextGameView: View {
                                 .resizable()
                                 .frame(width: 100, height: 100)
                                 .foregroundStyle(Color.blue)
+                                .shadow(color: .blue, radius: 5)
                         }//end VStack
                         Spacer()
                     }//end HStack
@@ -47,7 +50,7 @@ struct NextGameView: View {
                     Spacer()
                     
                     Text("July 12 - 12:00 PM")
-                        .font(.title2)
+                        .font(.title3)
                         .bold()
                         .frame(width: 350, height: 80)
                         .background(Color.black)

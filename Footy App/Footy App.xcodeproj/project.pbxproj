@@ -11,6 +11,7 @@
 		821DB48C2C40CC83003FAF27 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */; };
 		821DB48E2C40CCB1003FAF27 /* JoinNowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */; };
 		821DB4912C40D2A8003FAF27 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB4902C40D2A8003FAF27 /* Email.swift */; };
+		BE02C8A82C49474300C49BFD /* AdminProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE02C8A72C49474300C49BFD /* AdminProfileView.swift */; };
 		BE18AFDC2C41782500A1E59A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18AFDB2C41782500A1E59A /* LoginView.swift */; };
 		BE505A7F2C417A06007D57FC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE505A7E2C417A06007D57FC /* ProfileView.swift */; };
 		BE6B14012C3B313500F1F609 /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6B14002C3B313500F1F609 /* ScoresView.swift */; };
@@ -29,6 +30,7 @@
 		821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowButtonView.swift; sourceTree = "<group>"; };
 		821DB4902C40D2A8003FAF27 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		BE02C8A72C49474300C49BFD /* AdminProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileView.swift; sourceTree = "<group>"; };
 		BE18AFDB2C41782500A1E59A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BE34344E2C358192001675CD /* Footy-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Footy-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BE505A7E2C417A06007D57FC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				BE77F0B82C32EF33002AD510 /* Footy_AppApp.swift */,
 				BE18AFDB2C41782500A1E59A /* LoginView.swift */,
 				BE77F0BA2C32EF33002AD510 /* ContentView.swift */,
+				BE02C8A72C49474300C49BFD /* AdminProfileView.swift */,
 				BE6B14002C3B313500F1F609 /* ScoresView.swift */,
 				BE77F0C62C32F058002AD510 /* StatsView.swift */,
 				BE505A7E2C417A06007D57FC /* ProfileView.swift */,
@@ -190,6 +193,7 @@
 				BE70EE1E2C44A9E30058FCCA /* NextGameView.swift in Sources */,
 				821DB48E2C40CCB1003FAF27 /* JoinNowButtonView.swift in Sources */,
 				BE77F0CD2C32F097002AD510 /* TeamsView.swift in Sources */,
+				BE02C8A82C49474300C49BFD /* AdminProfileView.swift in Sources */,
 				821DB48A2C3EFF19003FAF27 /* CarouselView.swift in Sources */,
 				BE18AFDC2C41782500A1E59A /* LoginView.swift in Sources */,
 				BE77F0C72C32F058002AD510 /* StatsView.swift in Sources */,
