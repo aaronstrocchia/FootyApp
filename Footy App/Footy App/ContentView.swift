@@ -44,7 +44,7 @@ struct HomeView: View {
                         Button(action: {
                             isGamesViewPresent.toggle()
                         }, label: {
-                            Text("View All >")
+                            Text("More Info >")
                         })//end Button
                         .sheet(isPresented: $isGamesViewPresent, content: {
                             NextGameView()
