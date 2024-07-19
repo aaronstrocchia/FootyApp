@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseAuth
 
 struct JoinNowButtonView: View {
+    @Binding var isJoinViewPresent: Bool
     @State private var firstName: String = ""
     @State private var lastName: String = ""
     @State private var email: String = ""
@@ -187,6 +188,7 @@ struct JoinNowButtonView: View {
                     
                     if let authResult = authResult {
                         print("\(authResult.user.uid)")
+                        self.isJoinViewPresent = false
                     }
                     
             
@@ -206,7 +208,6 @@ struct JoinNowButtonView: View {
                     .cornerRadius(3.0)
             }.padding()
             
-            
             Spacer()
             Spacer()
         }.background(backgroundColor)
@@ -215,5 +216,5 @@ struct JoinNowButtonView: View {
 
 
 #Preview {
-    JoinNowButtonView()
+    LoginView()
 }
