@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct JoinNowButtonView: View {
     @State private var firstName: String = ""
@@ -176,6 +177,24 @@ struct JoinNowButtonView: View {
             }.padding()
             
             Button(action:{
+                Auth.auth().createUser(withEmail: email, password: password1) { authResult, error in
+                    
+                    if let error = error {
+                        print(error)
+                        
+                        return
+                    }
+                    
+                    if let authResult = authResult {
+                        print("\(authResult.user.uid)")
+                    }
+                    
+            
+                    
+                }
+                
+                
+                
             }){
                 Text ("Create Account")
                     .fontWeight(.light)
