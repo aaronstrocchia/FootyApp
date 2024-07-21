@@ -3,7 +3,7 @@
 //  Footy App
 //
 //  Created by Aaron Strocchia on 7/1/24.
-//
+//  Updated by Moises Sanchez on 7/21/24.
 
 import SwiftUI
 import PhotosUI
