@@ -14,6 +14,7 @@ struct LoginView: View {
     @State private var isJoinNowViewPresent: Bool = false
     @State private var isForgotPassViewPresent: Bool = false
     
+    
     var body: some View {
         
         NavigationStack{
@@ -56,7 +57,7 @@ struct LoginView: View {
                                 .background(.orange)
                                 .cornerRadius(3.0)
                         }.sheet(isPresented: $isJoinNowViewPresent, content: {
-                            JoinNowButtonView()
+                            JoinNowButtonView(isJoinViewPresent: $isJoinNowViewPresent)
                         })
                         
                         Text("- or -")

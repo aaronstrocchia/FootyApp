@@ -168,7 +168,7 @@ struct ContentView: View {
                     .tabItem {
                         Label("Stats", systemImage: "chart.line.uptrend.xyaxis")
                     }
-                ProfileView()
+                AdminProfileView()
                     .tabItem {
                         Label("Profile", systemImage: "person")
                     }

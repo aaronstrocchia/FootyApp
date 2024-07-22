@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct JoinNowButtonView: View {
+    @Binding var isJoinViewPresent: Bool
     @State private var firstName: String = ""
     @State private var lastName: String = ""
     @State private var email: String = ""
@@ -176,6 +178,25 @@ struct JoinNowButtonView: View {
             }.padding()
             
             Button(action:{
+                Auth.auth().createUser(withEmail: email, password: password1) { authResult, error in
+                    
+                    if let error = error {
+                        print(error)
+                        
+                        return
+                    }
+                    
+                    if let authResult = authResult {
+                        print("\(authResult.user.uid)")
+                        self.isJoinViewPresent = false
+                    }
+                    
+            
+                    
+                }
+                
+                
+                
             }){
                 Text ("Create Account")
                     .fontWeight(.light)
@@ -187,7 +208,6 @@ struct JoinNowButtonView: View {
                     .cornerRadius(3.0)
             }.padding()
             
-            
             Spacer()
             Spacer()
         }.background(backgroundColor)
@@ -196,5 +216,5 @@ struct JoinNowButtonView: View {
 
 
 #Preview {
-    JoinNowButtonView()
+    LoginView()
 }
