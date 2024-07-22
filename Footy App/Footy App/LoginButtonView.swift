@@ -14,8 +14,8 @@ struct LoginButtonView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var isDarkMode: Bool = false
-    @State private var backgroundColor = Color(red: 18/255, green: 18/255, blue: 25/255)
-    
+    @State private var backgroundColor = Color(red: 13/255, green: 12/255, blue: 11/255)
+
     var body: some View {
         VStack{
             Spacer()
