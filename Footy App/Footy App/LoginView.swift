@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Environment(\.presentationMode) var presentationMode
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var isLoginViewPresent: Bool = false
     @State private var isJoinNowViewPresent: Bool = false
-    @State private var isForgotPassViewPresent: Bool = false
-    
+    @State private var isInsideAppViewPresented: Bool = false
+
     
     var body: some View {
         
@@ -65,7 +66,7 @@ struct LoginView: View {
                             .fontWeight(.thin)
                             .foregroundStyle(.white)
                             .padding(-4)
-                        
+                       
                         Button(action:{
                             isLoginViewPresent.toggle()
                         }){
@@ -79,6 +80,7 @@ struct LoginView: View {
                                 .cornerRadius(3.0)
                         }.sheet(isPresented: $isLoginViewPresent, content: {
                             LoginButtonView()
+
                         })
                         
                         
