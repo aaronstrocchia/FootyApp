@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		78FF6F142C49F40400921C4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FF6F132C49F40400921C4D /* GoogleService-Info.plist */; };
-		78FF6F172C49F94300921C4D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 78FF6F162C49F94300921C4D /* FirebaseAuth */; };
 		821DB48A2C3EFF19003FAF27 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB4892C3EFF19003FAF27 /* CarouselView.swift */; };
 		821DB48C2C40CC83003FAF27 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */; };
 		821DB48E2C40CCB1003FAF27 /* JoinNowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */; };
 		821DB4912C40D2A8003FAF27 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB4902C40D2A8003FAF27 /* Email.swift */; };
+		8263C52C2C4ECE6A00DF9F85 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8263C52B2C4ECE6A00DF9F85 /* FirebaseAuth */; };
+		8263C52E2C4EE48600DF9F85 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8263C52D2C4EE48600DF9F85 /* ForgotPasswordView.swift */; };
 		BE02C8A82C49474300C49BFD /* AdminProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE02C8A72C49474300C49BFD /* AdminProfileView.swift */; };
 		BE18AFDC2C41782500A1E59A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18AFDB2C41782500A1E59A /* LoginView.swift */; };
 		BE505A7F2C417A06007D57FC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE505A7E2C417A06007D57FC /* ProfileView.swift */; };
@@ -33,6 +34,8 @@
 		821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowButtonView.swift; sourceTree = "<group>"; };
 		821DB4902C40D2A8003FAF27 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		8263C52D2C4EE48600DF9F85 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		8263C52F2C4EE8EE00DF9F85 /* Footy App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Footy App.entitlements"; sourceTree = "<group>"; };
 		BE02C8A72C49474300C49BFD /* AdminProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileView.swift; sourceTree = "<group>"; };
 		BE18AFDB2C41782500A1E59A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BE34344E2C358192001675CD /* Footy-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Footy-App-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -54,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78FF6F172C49F94300921C4D /* FirebaseAuth in Frameworks */,
+				8263C52C2C4ECE6A00DF9F85 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,11 +72,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		8263C52A2C4ECE4500DF9F85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE77F0AC2C32EF33002AD510 = {
 			isa = PBXGroup;
 			children = (
 				BE77F0B72C32EF33002AD510 /* Footy App */,
 				BE77F0B62C32EF33002AD510 /* Products */,
+				8263C52A2C4ECE4500DF9F85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +99,7 @@
 		BE77F0B72C32EF33002AD510 /* Footy App */ = {
 			isa = PBXGroup;
 			children = (
+				8263C52F2C4EE8EE00DF9F85 /* Footy App.entitlements */,
 				BE34344E2C358192001675CD /* Footy-App-Info.plist */,
 				821DB48F2C40D292003FAF27 /* Extensions */,
 				BE77F0B82C32EF33002AD510 /* Footy_AppApp.swift */,
@@ -100,6 +112,7 @@
 				821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */,
 				BE70EE1D2C44A9E30058FCCA /* NextGameView.swift */,
 				821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */,
+				8263C52D2C4EE48600DF9F85 /* ForgotPasswordView.swift */,
 				BE77F0CA2C32F088002AD510 /* UpcomingGamesView.swift */,
 				BE77F0CC2C32F096002AD510 /* TeamsView.swift */,
 				78FF6F132C49F40400921C4D /* GoogleService-Info.plist */,
@@ -135,7 +148,7 @@
 			);
 			name = "Footy App";
 			packageProductDependencies = (
-				78FF6F162C49F94300921C4D /* FirebaseAuth */,
+				8263C52B2C4ECE6A00DF9F85 /* FirebaseAuth */,
 			);
 			productName = "Footy App";
 			productReference = BE77F0B52C32EF33002AD510 /* Footy App.app */;
@@ -208,6 +221,7 @@
 				BE02C8A82C49474300C49BFD /* AdminProfileView.swift in Sources */,
 				821DB48A2C3EFF19003FAF27 /* CarouselView.swift in Sources */,
 				BE18AFDC2C41782500A1E59A /* LoginView.swift in Sources */,
+				8263C52E2C4EE48600DF9F85 /* ForgotPasswordView.swift in Sources */,
 				BE77F0C72C32F058002AD510 /* StatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,10 +353,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Footy App/Footy App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Footy App/Preview Content\"";
-				DEVELOPMENT_TEAM = FDV24QHHQ9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Footy-App-Info.plist";
@@ -369,10 +384,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Footy App/Footy App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Footy App/Preview Content\"";
-				DEVELOPMENT_TEAM = FDV24QHHQ9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Footy-App-Info.plist";
@@ -429,7 +445,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		78FF6F162C49F94300921C4D /* FirebaseAuth */ = {
+		8263C52B2C4ECE6A00DF9F85 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 78FF6F152C49F85700921C4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;

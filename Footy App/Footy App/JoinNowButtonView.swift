@@ -7,26 +7,28 @@
 
 import SwiftUI
 import FirebaseAuth
+import AuthenticationServices
 
 struct JoinNowButtonView: View {
     @Binding var isJoinViewPresent: Bool
     @State private var firstName: String = ""
     @State private var lastName: String = ""
     @State private var email: String = ""
+    @State private var showErrorAlert: Bool = false
     @State private var password1: String = ""
     @State private var password2: String = ""
     @State private var isDarkMode: Bool = false
     @State private var backgroundColor = Color(red: 13/255, green: 12/255, blue: 11/255)
-
+    
     var body: some View {
         VStack{
             Spacer()
             Text("FootyApp")
                 .italic()
                 .font(.system(size: 46))
+                .shadow(color: .orange, radius: 35)
                 .fontWeight(.heavy)
-                .foregroundStyle(.white)
-                .shadow(color: .gray, radius: 25)
+                .foregroundStyle(.orange)
                 .padding()
             
             Spacer()
@@ -191,7 +193,7 @@ struct JoinNowButtonView: View {
                         self.isJoinViewPresent = false
                     }
                     
-            
+                    
                     
                 }
                 
@@ -207,6 +209,31 @@ struct JoinNowButtonView: View {
                     .background(.orange)
                     .cornerRadius(3.0)
             }.padding()
+            
+            Text("- or -")
+                .italic()
+                .fontWeight(.thin)
+                .foregroundStyle(.white)
+                .padding(-4)
+            
+            SignInWithAppleButton(
+                .signUp,
+                onRequest: { request in
+                    request.requestedScopes = [.fullName, .email]
+                },
+                onCompletion: { result in
+                    switch result {
+                    case .success(let authResults):
+                        print("SignUp Successful")
+                    case .failure(let error):
+                        print("SignUp failed: \(error.localizedDescription)")
+                        showErrorAlert.toggle()
+                    }
+                }
+            )
+            .signInWithAppleButtonStyle(.white)
+            .frame(height: 45)
+            .padding()
             
             Spacer()
             Spacer()
