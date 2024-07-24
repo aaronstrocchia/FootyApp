@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78FF6F142C49F40400921C4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FF6F132C49F40400921C4D /* GoogleService-Info.plist */; };
 		821DB48A2C3EFF19003FAF27 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB4892C3EFF19003FAF27 /* CarouselView.swift */; };
 		821DB48C2C40CC83003FAF27 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */; };
 		821DB48E2C40CCB1003FAF27 /* JoinNowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */; };
 		821DB4912C40D2A8003FAF27 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DB4902C40D2A8003FAF27 /* Email.swift */; };
 		8263C52C2C4ECE6A00DF9F85 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8263C52B2C4ECE6A00DF9F85 /* FirebaseAuth */; };
 		8263C52E2C4EE48600DF9F85 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8263C52D2C4EE48600DF9F85 /* ForgotPasswordView.swift */; };
+		8263C5312C4EFC0600DF9F85 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8263C5302C4EFC0600DF9F85 /* FirebaseFirestore */; };
+		82C813D62C4F1B02009B893A /* CreateTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C813D52C4F1B02009B893A /* CreateTeamView.swift */; };
+		82C813DA2C4F23A4009B893A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82C813D92C4F23A4009B893A /* GoogleService-Info.plist */; };
 		BE02C8A82C49474300C49BFD /* AdminProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE02C8A72C49474300C49BFD /* AdminProfileView.swift */; };
 		BE18AFDC2C41782500A1E59A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18AFDB2C41782500A1E59A /* LoginView.swift */; };
 		BE505A7F2C417A06007D57FC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE505A7E2C417A06007D57FC /* ProfileView.swift */; };
@@ -29,13 +31,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		78FF6F132C49F40400921C4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		821DB4892C3EFF19003FAF27 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		821DB48B2C40CC83003FAF27 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		821DB48D2C40CCB1003FAF27 /* JoinNowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowButtonView.swift; sourceTree = "<group>"; };
 		821DB4902C40D2A8003FAF27 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 		8263C52D2C4EE48600DF9F85 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		8263C52F2C4EE8EE00DF9F85 /* Footy App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Footy App.entitlements"; sourceTree = "<group>"; };
+		82C813D52C4F1B02009B893A /* CreateTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamView.swift; sourceTree = "<group>"; };
+		82C813D92C4F23A4009B893A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE02C8A72C49474300C49BFD /* AdminProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileView.swift; sourceTree = "<group>"; };
 		BE18AFDB2C41782500A1E59A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BE34344E2C358192001675CD /* Footy-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Footy-App-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -58,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8263C52C2C4ECE6A00DF9F85 /* FirebaseAuth in Frameworks */,
+				8263C5312C4EFC0600DF9F85 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +119,8 @@
 				8263C52D2C4EE48600DF9F85 /* ForgotPasswordView.swift */,
 				BE77F0CA2C32F088002AD510 /* UpcomingGamesView.swift */,
 				BE77F0CC2C32F096002AD510 /* TeamsView.swift */,
-				78FF6F132C49F40400921C4D /* GoogleService-Info.plist */,
+				82C813D52C4F1B02009B893A /* CreateTeamView.swift */,
+				82C813D92C4F23A4009B893A /* GoogleService-Info.plist */,
 				BE77F0BC2C32EF34002AD510 /* Assets.xcassets */,
 				BE77F0BE2C32EF34002AD510 /* Preview Content */,
 			);
@@ -149,6 +154,7 @@
 			name = "Footy App";
 			packageProductDependencies = (
 				8263C52B2C4ECE6A00DF9F85 /* FirebaseAuth */,
+				8263C5302C4EFC0600DF9F85 /* FirebaseFirestore */,
 			);
 			productName = "Footy App";
 			productReference = BE77F0B52C32EF33002AD510 /* Footy App.app */;
@@ -196,8 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE77F0C02C32EF34002AD510 /* Preview Assets.xcassets in Resources */,
+				82C813DA2C4F23A4009B893A /* GoogleService-Info.plist in Resources */,
 				BE77F0BD2C32EF34002AD510 /* Assets.xcassets in Resources */,
-				78FF6F142C49F40400921C4D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +219,7 @@
 				BE77F0CB2C32F088002AD510 /* UpcomingGamesView.swift in Sources */,
 				BE77F0BB2C32EF33002AD510 /* ContentView.swift in Sources */,
 				BE505A7F2C417A06007D57FC /* ProfileView.swift in Sources */,
+				82C813D62C4F1B02009B893A /* CreateTeamView.swift in Sources */,
 				BE77F0B92C32EF33002AD510 /* Footy_AppApp.swift in Sources */,
 				821DB4912C40D2A8003FAF27 /* Email.swift in Sources */,
 				BE70EE1E2C44A9E30058FCCA /* NextGameView.swift in Sources */,
@@ -371,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aaron.Footy-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.footyapp.Footy-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -402,7 +409,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aaron.Footy-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.footyapp.Footy-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -449,6 +456,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 78FF6F152C49F85700921C4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		8263C5302C4EFC0600DF9F85 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78FF6F152C49F85700921C4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
