@@ -20,7 +20,7 @@ struct LoginButtonView: View {
     @State private var backgroundColor = Color(red: 13/255, green: 12/255, blue: 11/255)
     @State private var showFullScreenContentView: Bool = false
     @State private var isForgotPassViewPresent: Bool = false
-
+    
     
     var body: some View {
         NavigationStack{
@@ -88,7 +88,7 @@ struct LoginButtonView: View {
                     .padding(.leading, 8)
                     .offset(CGSize(width: 0, height: -26))
                 }.padding()
-                
+            
                 Button(action:{
                     Auth.auth().signIn(withEmail: email, password: password){ authResult , error in
                         if let error = error {
@@ -112,7 +112,7 @@ struct LoginButtonView: View {
                         .background(.orange)
                         .cornerRadius(3.0)
                 }.padding()
-                .alert(isPresented: $showErrorAlert, content: {
+                    .alert(isPresented: $showErrorAlert, content: {
                         Alert(title: Text("Error login please check email and password"))
                     })
                 
@@ -138,23 +138,23 @@ struct LoginButtonView: View {
                     .padding(5)
                 
                 SignInWithAppleButton(
-                                    .signIn,
-                                    onRequest: { request in
-                                        request.requestedScopes = [.fullName, .email]
-                                    },
-                                    onCompletion: { result in
-                                        switch result {
-                                        case .success(let authResults):
-                                            print("Authorization Successful")
-                                        case .failure(let error):
-                                            print("Authorization failed: \(error.localizedDescription)")
-                                            showErrorAlert.toggle()
-                                        }
-                                    }
-                                )
-                                .signInWithAppleButtonStyle(.white)
-                                .frame(height: 45)
-                                .padding()
+                    .signIn,
+                    onRequest: { request in
+                        request.requestedScopes = [.fullName, .email]
+                    },
+                    onCompletion: { result in
+                        switch result {
+                        case .success(let authResults):
+                            print("Authorization Successful")
+                        case .failure(let error):
+                            print("Authorization failed: \(error.localizedDescription)")
+                            showErrorAlert.toggle()
+                        }
+                    }
+                )
+                .signInWithAppleButtonStyle(.white)
+                .frame(height: 45)
+                .padding()
                 
                 Spacer()
                 Spacer()

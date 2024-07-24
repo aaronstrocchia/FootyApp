@@ -13,6 +13,7 @@ struct LoginView: View {
     @State private var password: String = ""
     @State private var isLoginViewPresent: Bool = false
     @State private var isJoinNowViewPresent: Bool = false
+    @State private var isForgotPassViewPresent: Bool = false
     @State private var isInsideAppViewPresented: Bool = false
 
     

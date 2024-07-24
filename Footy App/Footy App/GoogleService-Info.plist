@@ -3,28 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyDPzCvIiXRo6sXovu5Dc_zo0z_YL_zlanc</string>
+	<string>AIzaSyAj_kEkKmTkW9cGkXiKGj-o18r262dgplE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>60953470226</string>
+	<string>869452444304</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.aaron.Footy-App</string>
+	<string>com.footyapp.Footy-App</string>
 	<key>PROJECT_ID</key>
-	<string>footyapp-b2e1c</string>
+	<string>footyapp-5f38d</string>
 	<key>STORAGE_BUCKET</key>
-	<string>footyapp-b2e1c.appspot.com</string>
+	<string>footyapp-5f38d.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:60953470226:ios:9fcedb6c9de607c041ffcb</string>
+	<string>1:869452444304:ios:a90e846ee7620bab085e15</string>
 </dict>
 </plist>
