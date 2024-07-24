@@ -100,45 +100,49 @@ struct HomeView: View {
                         Spacer()
                     }//end HStack
                     .padding([.leading, .trailing], 110)
-                    
-                    HStack {
-                        Spacer()
-                        VStack(alignment: .center) {
-                            Text("8")
-                                .font(.title)
-                                .bold()
-                                .frame(width: 100, height: 100)
-                                .background(Color.white)
-                                .foregroundStyle(Color.black)
-                                .cornerRadius(100)
-                            Text("Goals")
-                        }//end HStack
-                        Spacer()
-                        VStack(alignment: .center) {
-                            Text("5")
-                                .font(.title)
-                                .bold()
-                                .frame(width: 100, height: 100)
-                                .background(Color.white)
-                                .foregroundStyle(Color.black)
-                                .cornerRadius(100)
-                            Text("Assists")
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            Spacer()
+                            VStack(alignment: .center) {
+                                Text("8")
+                                    .font(.title)
+                                    .bold()
+                                    .frame(width: 100, height: 100)
+                                    .background(Color.white)
+                                    .foregroundStyle(Color.black)
+                                    .cornerRadius(100)
+                                Text("Goals")
+                            }//end HStack
+                            .padding(.horizontal, 15)
+                            Spacer()
+                            VStack(alignment: .center) {
+                                Text("5")
+                                    .font(.title)
+                                    .bold()
+                                    .frame(width: 100, height: 100)
+                                    .background(Color.white)
+                                    .foregroundStyle(Color.black)
+                                    .cornerRadius(100)
+                                Text("Assists")
+                            }
+                            .padding(.horizontal, 15)
+                            Spacer()
+                            VStack(alignment: .center) {
+                                Text("2")
+                                    .font(.title)
+                                    .bold()
+                                    .frame(width: 100, height: 100)
+                                    .background(Color.white)
+                                    .foregroundStyle(Color.black)
+                                    .cornerRadius(100)
+                                Text("Saves")
+                            }
+                            .padding(.horizontal, 15)
+                            Spacer()
                         }
-                        Spacer()
-                        VStack(alignment: .center) {
-                            Text("2")
-                                .font(.title)
-                                .bold()
-                                .frame(width: 100, height: 100)
-                                .background(Color.white)
-                                .foregroundStyle(Color.black)
-                                .cornerRadius(100)
-                            Text("Saves")
-                        }
-                        Spacer()
+                        
                     }
-                    .padding([.leading, .trailing], 250)
-                    
+                    .padding([.leading], 250)
                     Spacer()
                 }//end Vstack
                 .padding(.top, 20)
