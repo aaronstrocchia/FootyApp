@@ -144,6 +144,12 @@ struct ProfileView: View {
                             Text("Personal")
                         }
                     }
+                    NavigationLink(destination: TeamCreationView()) {
+                        HStack {
+                            Image(systemName: "plus")
+                            Text("Create A Team")
+                        }
+                    }
                     NavigationLink(destination: TeamsView()) {
                         HStack {
                             Image(systemName: "figure.soccer")

@@ -45,6 +45,7 @@ struct HomeView: View {
                             isGamesViewPresent.toggle()
                         }, label: {
                             Text("More Info >")
+                                .foregroundStyle(.blue)
                         })//end Button
                         .sheet(isPresented: $isGamesViewPresent, content: {
                             NextGameView()
